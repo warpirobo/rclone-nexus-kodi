@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.ariostv" name="Rclone Nexus" version="1.3.1" provider-name="AriosTV">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_US">Browse, stream, and build STRM libraries from rclone remotes</summary>
+        <summary lang="en_GB">Browse, stream, and build STRM libraries from rclone remotes</summary>
+        <description lang="en_US">Browse crypt, combine, and other rclone remotes; stream through a local rclone server; and export folders as STRM files for the Kodi library. Includes incremental sync, new-content tracking, favorites, search, and bounded temporary storage.</description>
+        <description lang="en_GB">Browse crypt, combine, and other rclone remotes; stream through a local rclone server; and export folders as STRM files for the Kodi library. Includes incremental sync, new-content tracking, favorites, search, and bounded temporary storage.</description>
+        <platform>android</platform>
+        <license>GPL-3.0-or-later</license>
+        <news>1.3.1: Complete English (US) interface, documentation, diagnostics, and artwork translation. Added GitHub-ready build and validation files.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

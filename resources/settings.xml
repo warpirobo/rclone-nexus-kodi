@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category label="Connection">
+        <setting id="conf_path" label="Path to rclone.conf" type="file" default="" />
+        <setting id="remote_name" label="Preferred remote (shown first)" type="text" default="" />
+    </category>
+
+    <category label="Local rclone binary">
+        <setting id="rclone_path" label="Direct path to the rclone binary" type="file" default="" />
+        <setting id="rclone_install_dir" label="Internal executable folder (optional)" type="folder" default="" />
+        <setting id="rclone_arch" label="Architecture: auto, armv7a, armv8a, x86, or x64" type="text" default="auto" />
+        <setting id="serve_port_start" label="Starting port for rclone serve" type="number" default="28980" />
+        <setting id="serve_start_timeout" label="Server startup timeout (seconds)" type="number" default="30" />
+        <setting id="rclone_serve_extra_args" label="Additional arguments for rclone serve" type="text" default="" />
+    </category>
+
+    <category label="Playback and storage">
+        <setting id="vfs_cache_mode" label="VFS mode: off, minimal, writes, or full" type="text" default="off" />
+        <setting id="vfs_cache_max_size_mb" label="Maximum VFS cache size (MB)" type="number" default="256" />
+        <setting id="buffer_size_mb" label="In-memory buffer per playback (MB)" type="number" default="8" />
+        <setting id="read_chunk_size_mb" label="Initial read chunk size (MB)" type="number" default="16" />
+        <setting id="read_chunk_limit_mb" label="Read chunk size limit (MB)" type="number" default="128" />
+    </category>
+
+    <category label="Browsing">
+        <setting id="list_cache_minutes" label="Folder cache duration (minutes)" type="number" default="30" />
+        <setting id="list_timeout" label="Listing timeout (seconds)" type="number" default="120" />
+        <setting id="skip_modtime" label="Skip modification dates for faster browsing" type="bool" default="true" />
+    </category>
+
+    <category label="STRM library">
+        <setting id="library_root" label="Local folder for STRM libraries" type="folder" default="" />
+        <setting id="strm_keep_extension" label="Keep the original extension in the .strm filename" type="bool" default="false" />
+        <setting id="library_delete_missing" label="Delete STRM files when remote files disappear" type="bool" default="true" />
+        <setting id="library_fast_list" label="Use --fast-list for recursive scans" type="bool" default="true" />
+        <setting id="library_scan_timeout" label="Recursive scan timeout (seconds)" type="number" default="900" />
+        <setting id="auto_update_kodi_library" label="Request a Kodi library update after changes" type="bool" default="true" />
+        <setting id="new_content_days" label="Days to keep items in New content" type="number" default="30" />
+    </category>
+
+    <category label="Automatic synchronization">
+        <setting id="auto_sync_enabled" label="Check libraries automatically" type="bool" default="false" />
+        <setting id="auto_sync_interval_minutes" label="Check interval (minimum 30 minutes)" type="number" default="180" />
+    </category>
+</settings>
